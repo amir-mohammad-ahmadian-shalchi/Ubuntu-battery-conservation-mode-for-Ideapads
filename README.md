@@ -15,7 +15,7 @@ I tested it on my laptop (Lenovo Ideapad z510) and it worked correctly. Please f
 Step 1: Please make sure you have the acpi-call-dkms package installed. <br />
 Step 2: Extract the file. <br />
 Step 3: Open terminal and navigate to the directory that you extracted. <br />
-Step 4: Please write this command in terminal to make the file executable. <br />
+Step 4: Please make the file executable by writing this command in terminal. <br />
 ```bash
 chmod +x conservation-mode
 ```
