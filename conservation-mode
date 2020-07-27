@@ -1,0 +1,44 @@
+#!/bin/bash
+
+[ "$UID" -eq 0 ] || exec sudo "$0" "$@"
+
+echo ""
+echo "***Alpha version***"
+echo ""
+echo "1) Enabale conservation mode"
+echo "2) Disabale conservation mode"
+echo "3) Conservation mode status"
+echo ""
+
+read sw
+
+if [ $sw -eq 1 ]
+then
+	echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+	echo ""
+	echo "Conservation mode enabled."
+	echo "You will see the result about 1-2 minutes."
+	echo ""
+fi
+if [ $sw -eq 2 ]
+then
+	echo 0 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+	echo ""
+	echo "Conservation mode disabled."
+	echo "You will see the result about 1-2 minutes."
+	echo ""
+fi
+if [ $sw -eq 3 ] 
+then
+	if grep -q 1 /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode;
+	then 
+		echo ""
+		echo "Conservation mode is enabled."
+	fi
+	if grep -q 0 /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode;
+	then
+		echo ""
+		echo "Conservation mode is disabled."
+	fi
+fi
+
