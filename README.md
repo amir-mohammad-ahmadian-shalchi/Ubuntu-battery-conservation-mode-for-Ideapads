@@ -5,7 +5,7 @@
 [![HitCount](http://hits.dwyl.com/amir-mohammad-ahmadian-shalchi/Ubuntu-battery-conservation-mode-for-Ideapads.svg)](http://hits.dwyl.com/amir-mohammad-ahmadian-shalchi/Ubuntu-battery-conservation-mode-for-Ideapads) <br />
 **Alpha version** 
 
-Since there is not any Lenovo Power Management in Ubuntu, conservation mode can not be activated in an Ideapad easily. But I created a file that can activate it easily! and it is more user friendly! I hope you enjoy it.
+Since there is not any Lenovo Power Management in Ubuntu, conservation mode can not be activated in an Ideapad easily. But I created a file that can activate it easily! And it is more user friendly! I hope you enjoy it.
 
 # Description
 This file requires you to enter your password because it can only work in root mode.
